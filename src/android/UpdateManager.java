@@ -171,7 +171,7 @@ public class UpdateManager {
                     mHandler.sendEmptyMessage(Constants.DOWNLOAD_CLICK_START);
                 } else {
                     // 显示提示对话框
-                    msgBox.showNoticeDialog(noticeDialogOnClick);
+                    msgBox.showNoticeDialog(noticeDialogOnClick, errorDialogOnClick);
                     mHandler.sendEmptyMessage(Constants.VERSION_NEED_UPDATE);
                 }
             }
